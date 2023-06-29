@@ -1,0 +1,406 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Portfolio Website</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+         }
+         body{
+            background-color: rgb(13, 2, 46);
+            color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         }
+         nav{
+            justify-content: space-around;
+            display: flex;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(13, 2, 67);
+            position: fixed;
+            top: 0;
+            width: 100%;
+         }
+         nav ul{
+            display: flex;
+            justify-content: center;
+         }
+         nav ul li{
+            list-style: none;
+            margin: 0 23px;
+         }
+         nav ul li a{
+            text-decoration:none;
+            color: white;
+         }
+         nav ul li a:hover{
+            color: rgb(143, 100, 241);
+            font-size: 1.2rem;
+         }
+         .left{
+            font-size: 1.5em;
+            font-weight: bolder;
+         }
+         .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+            align-items: center;
+            
+         }
+         .firstsection > div{
+            width: 30%;
+         }
+         
+         .leftsection{
+            margin: 70px 0;
+            font-size:2.8rem;
+         }
+         .leftsection .buttons{
+             padding: 50px 0;
+         }
+         .leftsection .btn{
+                 color: white;
+                 border: 2px solid white;
+                 padding: 12px;
+                 background-color: rgb(32, 7, 80);
+                 border-radius: 6px;
+                 font-size: 20px;
+                cursor: pointer;
+         }
+         .leftsection .btn:hover{
+                     color: rgb(118, 49, 183);
+                     font-size: medium;
+         }
+         .small{
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-top: 3rem;
+         }
+         .purple{
+            color: rgb(118, 49, 183);
+         }
+         #element{
+            color: rgb(125, 67, 180);
+         }
+         
+         
+         .secondsection h2{
+            font-size: 1.9rem;
+         }
+         img{
+            height: 400px;
+            width: 300px;
+            border: 2rem solid white;
+            box-shadow: 12px 12px 2px 1px rgba(162, 155, 218, 0.2);;
+         }
+         .img1{
+            height: 300px;
+            width: 200px;
+         }
+         .secondsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+            align-items: center;
+            height: 100vh;
+            margin-top: 5%;
+            
+         }
+         
+         .left2{
+            width: 25%;
+         }
+         .right2{
+            width: 50%;
+         }
+         h1{
+            margin: 50px;
+            margin-left: 0;
+            padding: 10px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+         }
+         h2{
+            color: rgb(134, 116, 212);
+            margin: 10px;
+            margin-left: 0;
+         }
+         h3{
+            margin: 5px;
+            padding: 10px;
+         }
+         section{
+           margin: 10px;
+           
+         }
+         .threesection{
+            background-color:  rgb(32, 7, 80);
+            border-radius: 10px;
+            padding: 70px;
+            margin: 5px;
+         }
+         .skills{
+            list-style:square;
+         }
+         .skills li{
+            padding: 10px;
+            margin-left: 5%;
+            font-weight: bold;
+            font-size: 18px;
+         }
+         
+         iframe{
+            margin: 10px;
+            height: 40%;
+            width: 12.8%;
+            display: inline;
+            border: 1rem solid rgb(162, 162, 204);
+         }
+         .resume{
+            color:rgb(219, 149, 240);
+                 border: 3px ridge white;
+                 padding: 10px;
+                 background-color: rgb(32, 7, 80);
+                 border-radius: 6px;
+                 font-size:larger;
+                 font-weight: bolder;
+                cursor: pointer;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin: 20px;
+         }
+         .resume:hover{
+            font-size: medium;
+         }
+         .res{
+            background-color: rgb(44, 20, 100);
+           
+            padding: 10px;
+         }
+         .sm-handle{
+            background-color: rgb(44, 20, 100);
+            text-align: center;
+            padding: 30px;
+           margin-bottom: 25px;
+          
+         }
+         .sm-handle a{
+            text-decoration: none;
+        }
+        .sm-handle a:hover{
+          font-size:larger;
+        }
+        .sm-handle a i{
+            margin: 10px;
+        }
+        .linkedin-handle{
+              color: #0e76a8;
+        }
+        .instagram-handle{
+             color: rgb(239, 37, 192);
+        }
+        .whatsapp-handle{
+          color: rgb(52, 216, 57);
+        }
+         footer{
+            background-color: rgb(61, 61, 133);
+            
+         }
+         .footer{
+            display: flex;
+         padding: 30px;
+            justify-content: space-evenly;
+         }
+         .footer ul{
+            list-style: none;
+         }
+         
+         .text-center{
+            text-align: center;
+            color: grey;
+            padding: 12px 0;
+            background-color: rgb(61, 61, 133);
+         }
+        .footer-1 .text-left{
+            text-align: left;
+            padding: 0;
+           margin-left: 0px;
+           margin-top: 0px;
+          
+         }
+         .footer-2 ul li{
+            padding: 20px;
+            margin: 5px;
+            display: inline;
+         }
+         .footer-2 ul li:hover{
+                 font-weight: 600;
+                 color: rgb(166, 145, 224);
+                 font-size: large;
+         }
+         .contact{
+            text-decoration: none;
+            color: white;
+         }
+         .contact:hover{
+            font-weight: 600;
+                 color: rgb(166, 145, 224);
+                 font-size: large;
+         }
+         .sublist ul li{
+            text-decoration: none;
+            padding: 10px;
+            font-size: small;
+         }
+         .icon a{
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+           
+         }
+         .icon{
+            background-color: rgb(61, 61, 133);
+           text-align: center;
+           margin-top: 0;
+           height: 100px;
+           margin-bottom: 0;
+         }
+         .size{
+            font-size: 40px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-shadow: 3px 3px 8px rgb(82, 61, 151);
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">My Portfolio</div>
+            <div class="right">
+                <ul>
+                  <li><a href="/">Home</a></li> 
+                  <li><a href="/">About</a></li> 
+                  <li><a href="/">Skills</a></li> 
+                  <li><a href="/">Projects</a></li>
+                  <li><a href="/">Resume</a></li> 
+                  <li><a href="/">Contact Me</a>
+               </li>      
+               </ul>
+            </div>
+        </nav>
+    </header>
+   <main>
+    <section class="firstsection">
+     <div class="leftsection">Hello!<div>My name is<span class="purple"> Sneha Sahu</span></div>
+        <div>and  I am an <span id="element">Engineering Student</span></div>
+        <div class="small">Aspiring Frontend Web Developer || Graphic Designer</div>
+        
+     <div class="buttons">
+       <button class="btn">Download Resume</button>
+       <button class="btn">Visit GitHub</button>
+     </div>
+    </div>
+     <div class="rightsection"><img src="profile-p.jpg"></div>
+    </section>
+    <section class="secondsection">
+        <div class="left2">
+         <img class="img1" src="profile-p.jpg">
+        </div>
+        <div class="right2">
+            <h1><u>About</u> :</h1>
+            <h2>Sneha Sahu</h2>
+            <p><h3>My name is sneha sahu.I am an undergraduate student at Samrat Ashok Technological Intitute,Vidisha,Madhya Pradesh.Currently persuing my bachelor's of technology in computer science and engineering.As a driven and ambitious student,I am eager to develop my skills in technical industry.</h3></p>
+              <p><h3> I am trying to gain a solid foundation in data structure and algorithms through programing language such as python.Through various course works and Projects,I am also working on web development skills as well as exploring graphic designing. </h3></p>
+        </div>
+    </section>
+    <section class="thirdsection">
+      <p class="size">Skills</p> <br><br>
+        <div class="threesection">
+            
+            <h3>Here are the skills that I am confident about :</h3>
+            <ul class="skills">
+                <li>Web Development</li>
+                <li>Graphic Designing</li>
+                <li> Poster Making</li>
+                <li>Communication Skills</li>
+                <li>Leadership</li>
+                <li>Time Management</li>
+            </ul>
+        </div>
+    </section><br><br><br>
+    <section class="fourthsection">
+       <p class="size">Projects</p><br><br>
+        <div class="fourdiv">
+            <div>
+                <iframe src="calculator.html">Calculator</iframe>
+                <iframe src="website.html">Teaching Website</iframe>
+                <iframe src="lengthconverter.html">Length Converter</iframe>
+                <iframe src="myntra clone.html">E-commerce Website</iframe>
+                <iframe src="contact_form.html">Forms</iframe>
+                <iframe src="hc form.html">Forms</iframe>
+            </div><br><br><br>
+           <p class="size">Resume</p><br><br>
+            <div class="res">
+               <p>Here is the link to download my Resume</p>
+               <a target="_blank" href="/Resume.pdf"><button class="resume"><i class="fa fa-download" aria-hidden="true"> Download</i></button></a>
+            </div>
+        </div>
+    </section><br><br><br>
+    <section class="fivesection">
+      <p class="size">Find Me On Social Media</p> <br><br>
+      <div class="sm-handle">
+         <a href="https://www.linkedin.com/in/sneha-sahu-577280234" target="blank" class="linkedin-handle"  rel="noopener noreferrer"><i class="fa fa-linkedin  fa-lg linkedin-handle "></i>Linkedin</a>&nbsp;&nbsp;&nbsp;
+         <a href="https:www.Instagram.com" target="blank" class="instagram-handle" rel="noopener noreferrer"><i class="fa fa-instagram fa-lg instagram-handle"></i>Instagram</a>&nbsp;&nbsp;&nbsp;
+         <a href="https:www.whatsapp.com" target="blank" class="whatsapp-handle"  rel="noopener noreferrer"><i class="fa fa-whatsapp fa-lg whatsapp-handle"></i>Whatsapp</a>&nbsp;
+            
+      </div>
+      <footer class="footer">
+         <div class="footer-1">
+         <h3 class="text-left">My Portfolio | Sneha Sahu</h3></div>
+         <div class="footer-2">
+            <ul>
+               <li>Home</li>
+               <li>About</li>
+               <li>Services</li>
+               <li><a class="contact" target="_blank" href="/contact_form.html">Contact Me</a></li>
+            </ul>
+         </div>
+         <div class="sublist"><ul>
+            <li><i class="fa fa-map-marker" style="font-size:15px"> Narmadapuram , Madhya Pradesh , India</i></li>
+            <li><i class="fa fa-envelope" style="font-size:15px"> Sneha25IO060@satiengg.in </i></li>
+           </ul>
+            </div>  
+      </footer>
+      <div class="icon">
+         <a href="#" class="fa fa-facebook"></a>
+         <a href="#" class="fa fa-twitter"></a>
+         <a href="#" class="fa fa-telegram"></a>
+         <a href="#" class="fa fa-linkedin"></a>
+      </div>
+      <div class="text-center">
+         Copyrights &#169;myportfolio.com | All rights reserved
+      </div>
+    </section>
+   </main>
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Learning Enthusiast.', 'Engineering Student.'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
